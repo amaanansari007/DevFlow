@@ -4,7 +4,7 @@ DevFlow is a full-stack project and task management application built to help us
 
 [![GitHub repository](https://img.shields.io/badge/GitHub-DevFlow-181717?logo=github)](https://github.com/amaanansari007/DevFlow)
 
-> **Live demo:** Deployment is in progress. The public application link will be added here after the Vercel deployment has been completed and tested.
+> **Live Demo:** [Open DevFlow](https://devflow-frontend-three.vercel.app)
 
 ## Screenshots
 
@@ -160,7 +160,7 @@ Task and project routes require an authenticated user.
 
 ## Deployment status
 
-The project is being prepared for Vercel deployment. Once both the frontend and backend are deployed and the production login, project, and task flows have been verified, the public demo URL will be added at the top of this page.
+DevFlow is deployed on Vercel. The frontend, backend, PostgreSQL connection, authentication, project management, and task management have been tested.
 
 ## Security
 
