@@ -3027,3 +3027,91 @@ body,
   }
 }
 
+
+/* ==========================================
+   DEVFLOW - LIGHT MODE TEXT CONTRAST FIX
+========================================== */
+
+:root[data-theme="light"] .app-shell {
+  --muted: #62677d;
+}
+
+/* Sidebar text */
+:root[data-theme="light"] .sidebar-section-label,
+:root[data-theme="light"] .sidebar-project,
+:root[data-theme="light"] .sidebar-settings:not(.active),
+:root[data-theme="light"] .workspace-copy small,
+:root[data-theme="light"] .profile-copy small {
+  color: #62677d;
+}
+
+/* Navigation */
+:root[data-theme="light"] .nav-link:not(.active) {
+  color: #5d6278;
+}
+
+/* Top navigation and search */
+:root[data-theme="light"] .breadcrumb {
+  color: #62677d;
+}
+
+:root[data-theme="light"] .breadcrumb strong {
+  color: #41445c;
+}
+
+:root[data-theme="light"] .breadcrumb-divider {
+  color: #85899c;
+}
+
+:root[data-theme="light"] .global-search input::placeholder {
+  color: #686d82;
+  opacity: 1;
+}
+
+/* Dashboard descriptions */
+:root[data-theme="light"] .welcome-copy > p,
+:root[data-theme="light"] .section-heading p,
+:root[data-theme="light"] .project-overview-card > p,
+:root[data-theme="light"] .settings-page-heading p {
+  color: #62677d;
+}
+
+/* Dashboard metrics */
+:root[data-theme="light"] .metric-label,
+:root[data-theme="light"] .metric-note {
+  color: #62677d;
+}
+
+/* Project cards */
+:root[data-theme="light"] .project-progress-row,
+:root[data-theme="light"] .project-overview-footer {
+  color: #62677d;
+}
+
+/* Task board */
+:root[data-theme="light"] .task-due,
+:root[data-theme="light"] .task-meta,
+:root[data-theme="light"] .task-move > span,
+:root[data-theme="light"] .task-action-button {
+  color: #5f647a;
+}
+
+/* Other small information */
+:root[data-theme="light"] .sidebar-tip p,
+:root[data-theme="light"] .sidebar-tip small,
+:root[data-theme="light"] .project-message,
+:root[data-theme="light"] .dashboard-footer,
+:root[data-theme="light"] .settings-detail span,
+:root[data-theme="light"] .notification-empty p {
+  color: #62677d;
+}
+
+/* Small text should remain comfortably readable */
+:root[data-theme="light"] .metric-note,
+:root[data-theme="light"] .project-overview-card > p,
+:root[data-theme="light"] .project-progress-row,
+:root[data-theme="light"] .project-overview-footer,
+:root[data-theme="light"] .task-due {
+  font-weight: 500;
+}
+
