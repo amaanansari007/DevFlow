@@ -364,6 +364,15 @@ function TaskCard({
   );
 }
 
+function getUserInitials(name: string): string {
+  const words = name.trim().split(/\s+/).filter(Boolean);
+
+  return words
+    .slice(0, 2)
+    .map((word) => word.charAt(0).toUpperCase())
+    .join("") || "U";
+}
+
 function App() {
   
 const [currentUser, setCurrentUser] = useState<User | null>(null);
@@ -1212,7 +1221,9 @@ if (!currentUser) {
 
 
         <div className="profile-row">
-          <div className="profile-avatar">AS</div>
+          <div className="profile-avatar">
+            {getUserInitials(currentUser.name)}
+          </div>
           <div className="profile-copy">
             <strong>{currentUser.name}</strong>
             <small>Personal workspace</small>
@@ -1305,7 +1316,9 @@ if (!currentUser) {
               )}
             </div>
 
-            <div className="topbar-avatar">AS</div>
+            <div className="topbar-avatar">
+              {getUserInitials(currentUser.name)}
+            </div>
           </div>
         </header>
 
