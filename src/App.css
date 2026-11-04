@@ -3115,3 +3115,30 @@ body,
   font-weight: 500;
 }
 
+/* ==========================================
+   DEVFLOW - MOBILE LOGIN SCROLL FIX
+========================================== */
+
+@media (max-width: 700px) {
+  html,
+  body {
+    width: 100%;
+    height: auto !important;
+    min-height: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  #root {
+    width: 100%;
+    height: auto !important;
+    min-height: 100dvh;
+    overflow: visible !important;
+  }
+
+  body {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: auto;
+  }
+}
+
